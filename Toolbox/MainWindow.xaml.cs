@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Toolbox.Forms
+namespace Toolbox
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
