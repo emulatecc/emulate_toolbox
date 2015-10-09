@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using Toolbox.Forms.Dialoges;
-
-namespace Toolbox
+namespace Toolbox.Forms.Dialoges
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für CreateProject.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreateProject : Window
     {
-        public MainWindow()
+        public CreateProject()
         {
             InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            CreateProject oProject = new CreateProject();
-            oProject.Show();
         }
     }
 }
