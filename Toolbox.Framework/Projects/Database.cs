@@ -7,11 +7,11 @@ namespace Toolbox.Framework.Projects
         /// <summary>
         /// Name of the Database
         /// </summary>
-        public string DatabaseName { get; set; }
+        public string DatabaseName { get; set; } = "";
 
         /// <summary>
         /// What type is the database of
         /// </summary>
-        public DBType DatabaseType { get; set; }
+        public DBType DatabaseType { get; set; } 
     }
 }

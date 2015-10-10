@@ -20,6 +20,10 @@ namespace Toolbox.Framework.Configuration
             return Directory.Exists(ProjectSettingsFolder);
         }
 
+        /// <summary>
+        /// Creates the Config directory
+        /// </summary>
+        /// <returns></returns>
         public static DirectoryInfo CreateSettingsDirectory()
         {
             return Directory.CreateDirectory(ProjectSettingsFolder);
