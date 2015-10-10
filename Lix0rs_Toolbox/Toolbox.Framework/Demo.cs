@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Toolbox.Framework.Projects.ProjectSettings
+namespace Toolbox.Framework
 {
-    class MainSettingParser
+    public class Demo
     {
-        public List<Project> Settings { get; set; }
     }
 }
