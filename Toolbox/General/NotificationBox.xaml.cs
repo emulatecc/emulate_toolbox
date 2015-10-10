@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using Toolbox.General;
-
-namespace Toolbox
+namespace Toolbox.General
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für NotificationBox.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NotificationBox : Window
     {
-        public MainWindow()
+        public NotificationBox()
         {
-
             InitializeComponent();
-        }
-
-        private void close_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

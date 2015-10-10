@@ -56,6 +56,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="General\BaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="General\NotificationBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ProjectManagement\GeneralProjectSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,6 +75,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\BaseWindow.xaml.cs">
+      <DependentUpon>BaseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="General\NotificationBox.xaml.cs">
+      <DependentUpon>NotificationBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProjectManagement\GeneralProjectSettings.xaml.cs">
       <DependentUpon>GeneralProjectSettings.xaml</DependentUpon>
@@ -103,7 +117,44 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\DropdownActiveLeft.png" />
+    <Resource Include="Resources\DropdownActiveMiddle.png" />
+    <Resource Include="Resources\DropdownActiveRight.png" />
+    <Resource Include="Resources\DropdownArrowDown.png" />
+    <Resource Include="Resources\DropdownArrowUp.png" />
+    <Resource Include="Resources\DropdownLeft.png" />
+    <Resource Include="Resources\DropdownMenuBottom.png" />
+    <Resource Include="Resources\DropdownMenuBottomLeft.png" />
+    <Resource Include="Resources\DropdownMenuBottomRight.png" />
+    <Resource Include="Resources\DropdownMenuLeft.png" />
+    <Resource Include="Resources\DropdownMenuRight.png" />
+    <Resource Include="Resources\DropdownMenuSpacer.png" />
+    <Resource Include="Resources\DropdownMenuTop.png" />
+    <Resource Include="Resources\DropdownMenuTopLeft.png" />
+    <Resource Include="Resources\DropdownMenuTopRight.png" />
+    <Resource Include="Resources\DropdownMiddle.png" />
+    <Resource Include="Resources\DropdownRight.png" />
+    <Resource Include="Resources\Logo_345.png" />
+    <Resource Include="Resources\ProjectDatabaseBG.png" />
+    <Resource Include="Resources\ProjectDatabaseHeadline1.png" />
+    <Resource Include="Resources\ProjectDatabaseHeadline2.png" />
+    <Resource Include="Resources\ProjectDatabaseHeadline3.png" />
+    <Resource Include="Resources\ProjectOverviewContainer.png" />
+    <Resource Include="Resources\ProjectOverviewOpenProjectButton.png" />
+    <Resource Include="Resources\ProjectOverviewProject.png" />
+    <Resource Include="Resources\ProjectOverviewProjectHovered.png" />
+    <Resource Include="Resources\ProjectOverviewStartProjectButton.png" />
+    <Resource Include="Resources\ProjectPverviewDeleteProjectButton.png" />
+    <Resource Include="Resources\ProjectSettingsBG.png" />
+    <Resource Include="Resources\ProjectSettingsButton.png" />
+    <Resource Include="Resources\ProjectSettingsHeadline.png" />
+    <Resource Include="Resources\SplashscreenHeadline.png" />
+    <Resource Include="Resources\TextInputLeft.png" />
+    <Resource Include="Resources\TextInputMiddle.png" />
+    <Resource Include="Resources\TextInputRight.png" />
+    <Resource Include="Resources\Validating.gif" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\CloseButton.png" />
     <Resource Include="Resources\Icon.png" />
