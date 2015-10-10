@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toolbox.ProjectManagement"
         mc:Ignorable="d"
-        Title="GeneralProjectSettings" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="525">
+    <Grid/>
+>>>>>>> refs/remotes/origin/master:Toolbox/ProjectManagement/MainWindow.xaml
 </Window>
