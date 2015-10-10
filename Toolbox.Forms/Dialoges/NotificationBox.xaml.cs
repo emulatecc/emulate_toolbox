@@ -1,7 +1,5 @@
 ﻿using System.Windows;
 
-
-
 namespace Toolbox.Forms.Dialoges
 {
     /// <summary>

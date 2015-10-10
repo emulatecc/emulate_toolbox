@@ -4,10 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Framework", "Toolbox.Framework\Toolbox.Framework.csproj", "{0338195A-0AB9-4207-BE05-04BF4DD3FF76}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7AB22462-5273-4DE3-9A4C-0C8494868EFC} = {7AB22462-5273-4DE3-9A4C-0C8494868EFC}
-		{EAD54FD5-A81B-4595-9349-4FFDE2F6E919} = {EAD54FD5-A81B-4595-9349-4FFDE2F6E919}
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{72CD61BA-D1DC-4327-BA7E-8851280078A5}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,8 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox", "Toolbox\Toolbox.csproj", "{EAD54FD5-A81B-4595-9349-4FFDE2F6E919}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0338195A-0AB9-4207-BE05-04BF4DD3FF76} = {0338195A-0AB9-4207-BE05-04BF4DD3FF76}
+		{7AB22462-5273-4DE3-9A4C-0C8494868EFC} = {7AB22462-5273-4DE3-9A4C-0C8494868EFC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Forms", "Toolbox.Forms\Toolbox.Forms.csproj", "{7AB22462-5273-4DE3-9A4C-0C8494868EFC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0338195A-0AB9-4207-BE05-04BF4DD3FF76} = {0338195A-0AB9-4207-BE05-04BF4DD3FF76}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
