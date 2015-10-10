@@ -24,5 +24,10 @@ namespace Toolbox
         {
             InitializeComponent();
         }
+
+        private void close_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
