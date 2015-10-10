@@ -8,6 +8,6 @@ namespace Toolbox.Framework.Projects.ProjectSettings
 {
     class MainSettingParser
     {
-        public List<Settings> Settings { get; set; }
+        public List<Project> Settings { get; set; }
     }
 }
