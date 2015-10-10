@@ -1,0 +1,13 @@
+﻿<Window x:Name="Project_Overview" x:Class="Toolbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Toolbox"
+        mc:Ignorable="d"
+        Title="Project Overview" Height="522" Width="427" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStyle="None" Icon="/Toolbox;component/Resources/Icon.png">
+    <Window.Background>
+        <ImageBrush ImageSource="/Toolbox;component/Resources/ProjectOverviewBG.png"/>
+    </Window.Background>
+    <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="164,84,0,0" VerticalAlignment="Top" Width="75"/>
+</Window>
