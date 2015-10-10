@@ -1,10 +1,11 @@
-﻿<Window x:Class="Toolbox.MainWindow"
+﻿<Window x:Class="Toolbox.ProjectManagement.GeneralProjectSettings"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Toolbox"
+        xmlns:local="clr-namespace:Toolbox.ProjectManagement"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid/>
+>>>>>>> refs/remotes/origin/master:Toolbox/ProjectManagement/MainWindow.xaml
 </Window>

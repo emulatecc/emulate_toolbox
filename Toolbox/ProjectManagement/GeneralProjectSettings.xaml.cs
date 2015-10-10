@@ -10,19 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Toolbox
+namespace Toolbox.ProjectManagement
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für GeneralProjectSettings.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GeneralProjectSettings : Window
     {
-        public MainWindow()
+        public GeneralProjectSettings()
         {
-
             InitializeComponent();
         }
     }

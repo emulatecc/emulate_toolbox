@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,7 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="ProjectManagement\MainWindow.xaml">
+    <Page Include="ProjectManagement\GeneralProjectSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProjectManagement\ProjectOverview.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,8 +68,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ProjectManagement\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="ProjectManagement\GeneralProjectSettings.xaml.cs">
+      <DependentUpon>GeneralProjectSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagement\ProjectOverview.xaml.cs">
+      <DependentUpon>ProjectOverview.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -95,11 +103,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Toolbox.Framework\Toolbox.Framework.csproj">
-      <Project>{424aae01-72a1-4a6b-82fd-0ef1cfe05f7b}</Project>
-      <Name>Toolbox.Framework</Name>
-    </ProjectReference>
+    <Resource Include="Resources\CloseButton.png" />
+    <Resource Include="Resources\Icon.png" />
+    <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\ProjectOverviewBG.png" />
+    <Resource Include="Resources\ProjectOverviewHeadline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
