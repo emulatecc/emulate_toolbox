@@ -8,11 +8,18 @@ namespace Toolbox.Framework.Configuration
 {
     public static class ConfigurationManager
     {
-        public static string ProjectSettingsFolder { get; } = "Projects";
-        public static List<Project> Projects { get; set; } = new List<Project>();
-                    
         /// <summary>
-        /// Checks if the Local Toolbox settings folder exists
+        /// Path to the Project-settings directory
+        /// </summary>
+        public static string ProjectSettingsFolder { get; } = "Projects";
+
+        /// <summary>
+        /// List of all Projects
+        /// </summary>
+        public static List<Project> Projects { get; set; } = new List<Project>();
+
+        /// <summary>
+        /// Checks if the Local Toolbox settings directory exists
         /// </summary>
         /// <returns></returns>
         public static bool SettingsDirectoryExists()
@@ -30,7 +37,7 @@ namespace Toolbox.Framework.Configuration
         }
 
         /// <summary>
-        /// Serializes all Projects into JSONs and saves them into the Projects folder
+        /// Serializes all Projects into JSONs and saves them into the Projects directory
         /// </summary>
         /// <returns></returns>
         public static bool SaveProjects()
@@ -60,6 +67,16 @@ namespace Toolbox.Framework.Configuration
                 //TODO: Call custom Error Window
                 return false;
             }
+        }
+
+        /// <summary>
+        /// Loads all Projects from the "Projects"-Directory and Serializes them to the List<Projects>
+        /// </summary>
+        /// <returns></returns>
+        public static bool LoadProjects()
+        {
+
+            return true;
         }
     }
 }
