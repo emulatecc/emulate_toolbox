@@ -1,7 +1,8 @@
 ﻿using System.IO;
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
+using System.Runtime.InteropServices;
 using Newtonsoft.Json;
 
 using Toolbox.Framework.Projects;
@@ -23,7 +24,7 @@ namespace Toolbox.Framework.Configuration
         /// <summary>
         /// Checks if the Local Toolbox settings directory exists
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if successfull</returns>
         public static bool SettingsDirectoryExists()
         {
             return Directory.Exists(ProjectSettingsDirectory);
@@ -32,7 +33,7 @@ namespace Toolbox.Framework.Configuration
         /// <summary>
         /// Creates the Config directory
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if successfull</returns>
         public static DirectoryInfo CreateSettingsDirectory()
         {
             return Directory.CreateDirectory(ProjectSettingsDirectory);
@@ -41,7 +42,7 @@ namespace Toolbox.Framework.Configuration
         /// <summary>
         /// Serializes all Projects into JSONs and saves them into the Projects directory
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if successfull</returns>
         public static bool SaveProjects()
         {
             try
@@ -74,47 +75,40 @@ namespace Toolbox.Framework.Configuration
         /// <summary>
         /// Loads all Projects from the "Projects"-Directory and Serializes them to the List<Projects>
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if successfull</returns>
         public static bool LoadProjects()
         {
             try
             {
-                if (SettingsDirectoryExists())
-                {
-                    List<string> JSONProjectFilenames = new List<string>();
-                    List<string> JSONProjectsRaw = new List<string>();
-                    FileStream fs;
-                    StreamReader reader;
-
-                    // Getting all ProjectSettings-FileNames from ProjectSettingsDirectory
-                    foreach (string file in Directory.GetFiles(ProjectSettingsDirectory))
-                        JSONProjectFilenames.Add(file);
-
-                    // Getting contents of each file
-                    foreach (string file in JSONProjectFilenames)
-                    {
-                        fs = new FileStream(file, FileMode.Open, FileAccess.Read);
-                        if (fs.CanRead)
-                        {
-                            reader = new StreamReader(fs);
-
-                            JSONProjectsRaw.Add(reader.ReadToEnd());
-
-                            reader.Close();
-                            fs.Close();
-                        }
-                        else
-                            throw new FileLoadException("Cannot read file: " + file);
-                    }
-
-                    // Serializing ProjectSettings into Projects-List
-                    foreach (string file in JSONProjectsRaw)
-                    {
-                        Project project = JsonConvert.DeserializeObject<Project>(file);
-
-                        Projects.Add(project);
-                    }
+                if (!SettingsDirectoryExists())
                     return true;
+
+                var jsonProjectsRaw = new List<string>();
+
+                // Getting all ProjectSettings-FileNames from ProjectSettingsDirectory
+                var jsonProjectFilenames= Directory.GetFiles(ProjectSettingsDirectory).ToList();
+
+                // Getting contents of each file
+                foreach (var file in jsonProjectFilenames)
+                {
+                    var fs = new FileStream(file, FileMode.Open, FileAccess.Read);
+                    if (fs.CanRead)
+                    {
+                        var reader = new StreamReader(fs);
+
+                        jsonProjectsRaw.Add(reader.ReadToEnd());
+
+                        reader.Close();
+                        fs.Close();
+                    }
+                    else
+                        throw new FileLoadException("Cannot read file: " + file);
+                }
+
+                // Serializing ProjectSettings into Projects-List
+                foreach (var project in jsonProjectsRaw.Select(JsonConvert.DeserializeObject<Project>))
+                {
+                    Projects.Add(project);
                 }
                 return true;
             }
