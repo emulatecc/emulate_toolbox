@@ -33,7 +33,7 @@ namespace Toolbox.Framework.Configuration
         /// Serializes all Projects into JSONs and saves them into the Projects folder
         /// </summary>
         /// <returns></returns>
-        public static bool SerializeProjects()
+        public static bool SaveProjects()
         {
             try
             {
