@@ -20,9 +20,20 @@ namespace Toolbox.UserContols
     /// </summary>
     public partial class CloseButton : UserControl
     {
+        public event EventHandler Click;
+
         public CloseButton()
         {
             InitializeComponent();
+
+            closeButton.Click += ButtonClick;
+        }
+
+        private void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            var eventHandler = this.Click;
+
+            eventHandler(this, e);
         }
     }
 }
