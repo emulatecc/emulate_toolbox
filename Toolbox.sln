@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox", "Toolbox\Toolbox.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Framework", "Toolbox.Framework\Toolbox.Framework.csproj", "{424AAE01-72A1-4A6B-82FD-0EF1CFE05F7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Resources", "Toolbox.UserContols\Toolbox.Resources.csproj", "{BED6C7D0-4888-45B2-AF75-968EDA906D70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Resources", "Toolbox.Resources\Toolbox.Resources.csproj", "{BED6C7D0-4888-45B2-AF75-968EDA906D70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

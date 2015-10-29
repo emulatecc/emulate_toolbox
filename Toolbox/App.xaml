@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Toolbox"
              StartupUri="ProjectManagement/ProjectOverview.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>

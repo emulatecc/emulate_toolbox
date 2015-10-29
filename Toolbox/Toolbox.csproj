@@ -115,7 +115,7 @@
       <Project>{424aae01-72a1-4a6b-82fd-0ef1cfe05f7b}</Project>
       <Name>Toolbox.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Toolbox.UserContols\Toolbox.Resources.csproj">
+    <ProjectReference Include="..\Toolbox.Resources\Toolbox.Resources.csproj">
       <Project>{bed6c7d0-4888-45b2-af75-968eda906d70}</Project>
       <Name>Toolbox.Resources</Name>
     </ProjectReference>

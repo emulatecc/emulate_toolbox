@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toolbox"
         mc:Ignorable="d"
-        Title="Project Overview" Height="522" Width="427" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize"  Icon="/Toolbox.Resources;component/Resources/Icon.png">
+        Title="Project Overview" Height="522" Width="427" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStyle="None" Icon="/Toolbox.Resources;component/Resources/Icon.png">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
