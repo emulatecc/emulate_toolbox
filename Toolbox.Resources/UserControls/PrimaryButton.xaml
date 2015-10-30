@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="30" d:DesignWidth="103">
     <UserControl.Resources>
-        <Style TargetType="Button" x:Key="PrimaryButton">
+        <Style TargetType="Button" x:Key="PrimatyButton">
             <Setter Property="TextBlock.TextAlignment" Value="Center" />
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Template">
@@ -54,7 +54,7 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <Button x:Name="button" Style="{DynamicResource PrimaryButton}" Content="Button" FontFamily="Roboto Light">
+        <Button x:Name="button" Style="{DynamicResource PrimatyButton}" Content="Button" FontFamily="Roboto Light">
         </Button>
     </Grid>
 </UserControl>
