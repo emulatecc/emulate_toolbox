@@ -61,8 +61,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ProjectManagement\GeneralProjectSettings.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ProjectManagement\ProjectOverview.xaml">
       <Generator>MSBuild:Compile</Generator>

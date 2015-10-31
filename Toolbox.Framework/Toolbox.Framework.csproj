@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\ConfigurationLoader.cs" />
+    <Compile Include="Projects\ProjectManager.cs" />
     <Compile Include="Enumerations\DBType.cs" />
     <Compile Include="Projects\Database.cs" />
     <Compile Include="Projects\MySQLSettings.cs" />

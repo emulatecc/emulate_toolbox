@@ -20,9 +20,29 @@ namespace Toolbox.Resources.UserControls
     /// </summary>
     public partial class PrimaryButton : UserControl
     {
+        public new static DependencyProperty ContentProperty = DependencyProperty.Register("Content", typeof(object), typeof(PrimaryButton));
+        public event EventHandler Click;
+
         public PrimaryButton()
         {
             InitializeComponent();
+            this.DataContext = this;
+
+            button.Click += ButtonClick;
+        }
+
+        private void ButtonClick(object sender, RoutedEventArgs e)
+        {
+            var eventHandler = this.Click;
+
+            eventHandler(this, e);
+        }
+
+        public new object Content
+        {
+            get { return GetValue(ContentProperty); }
+            set { SetValue(ContentProperty, value); }
+
         }
     }
 }

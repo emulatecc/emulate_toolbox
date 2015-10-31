@@ -1,15 +1,12 @@
-﻿using System.IO;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using Newtonsoft.Json;
 
-using Toolbox.Framework.Projects;
-
-namespace Toolbox.Framework.Configuration
+namespace Toolbox.Framework.Projects
 {
-    public static class ConfigurationManager
+    public static class ProjectManager
     {
         /// <summary>
         /// Path to the Project-settings directory

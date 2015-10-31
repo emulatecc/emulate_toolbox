@@ -18,11 +18,11 @@ using Toolbox.General;
 namespace Toolbox
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für ProjectOverview.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProjectOverview : Window
     {
-        public MainWindow()
+        public ProjectOverview()
         {
             InitializeComponent();
         }
@@ -30,6 +30,17 @@ namespace Toolbox
         private void close_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void startProject_Click(object sender, EventArgs e)
+        {
+            var projectSettingsWnd = new GeneralProjectSettings();
+            projectSettingsWnd.Show();
+        }
+
+        private void deleteProject_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toolbox"
-        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" x:Name="Project_Overview" x:Class="Toolbox.MainWindow"
+        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" xmlns:UserControls="clr-namespace:Toolbox.Resources.UserControls;assembly=Toolbox.Resources" x:Name="Project_Overview" x:Class="Toolbox.ProjectOverview"
         mc:Ignorable="d"
         Title="Project Overview" Height="522" Width="427" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStyle="None" Icon="/Toolbox.Resources;component/Resources/Icon.png">
     <Window.Resources>
@@ -21,5 +21,10 @@
     <Window.Background>
         <ImageBrush ImageSource="/Toolbox.Resources;component/Resources/ProjectOverviewBG.png"/>
     </Window.Background>
-    <UserContols:CloseButton x:Name="close" Margin="10" Click="close_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+    <Grid>
+        <UserContols:CloseButton x:Name="close" Margin="10" Click="close_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <UserControls:PrimaryButton x:Name="startProject" Click="startProject_Click" HorizontalAlignment="Left" Margin="285,447,0,0" VerticalAlignment="Top" Width="118" Content="+ START PROJECT"/>
+        <UserControls:TextBox HorizontalAlignment="Left" Margin="19,145,0,0" VerticalAlignment="Top" Width="386" Height="285"/>
+        <UserControls:PrimaryButton x:Name="deleteProject" Click="deleteProject_Click" HorizontalAlignment="Left" Margin="30,447,0,0" VerticalAlignment="Top" Width="118" Content="- DELETE PROJECT"/>
+    </Grid>
 </Window>

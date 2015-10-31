@@ -1,10 +1,37 @@
-﻿<Window x:Class="Toolbox.ProjectManagement.GeneralProjectSettings"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Toolbox.ProjectManagement"
+        xmlns:local="clr-namespace:Toolbox"
+        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" xmlns:UserControls="clr-namespace:Toolbox.Resources.UserControls;assembly=Toolbox.Resources" x:Name="ProjectOverview" x:Class="Toolbox.GeneralProjectSettings"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid/>
+        Title="General Project Settings" Height="398" Width="535" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStyle="None" Icon="/Toolbox.Resources;component/Resources/Icon.png">
+    <Window.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="/Toolbox.Resources;component/Resources/ProjectSettingsBG.png"/>
+    </Window.Background>
+    <Grid>
+        <UserContols:CloseButton x:Name="close" Margin="10" Click="close_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <UserControls:PrimaryButton x:Name="submit" HorizontalAlignment="Left" Margin="415,326,0,0" VerticalAlignment="Top" Width="101"/>
+        <UserControls:TextBox HorizontalAlignment="Left" Margin="176,236,0,0" VerticalAlignment="Top" Width="127"/>
+        <UserControls:TextBox HorizontalAlignment="Left" Margin="175,276,0,0" VerticalAlignment="Top" Width="128"/>
+        <UserControls:TextBox HorizontalAlignment="Left" Margin="176,197,0,0" VerticalAlignment="Top" Width="127"/>
+        <Label x:Name="label" Content="Name of your project?" HorizontalAlignment="Left" Margin="17,196,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
+        <Label x:Name="label_Copy" Content="Already got a logo?" HorizontalAlignment="Left" Margin="17,236,0,0" VerticalAlignment="Top" Height="27" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
+        <Label x:Name="label_Copy1" Content="Where to save?" HorizontalAlignment="Left" Margin="17,275,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
+        <Label x:Name="label1" Content="Set a name" HorizontalAlignment="Left" Margin="455,197,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
+        <Label x:Name="label1_Copy" Content="If you got a logo give it a shot!" HorizontalAlignment="Left" Margin="363,237,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
+        <Label x:Name="label1_Copy1" Content="The directory of the project" HorizontalAlignment="Left" Margin="375,277,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
+    </Grid>
 </Window>

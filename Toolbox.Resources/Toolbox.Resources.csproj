@@ -96,55 +96,10 @@
     <Resource Include="Resources\CloseButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\DropdownActiveLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownActiveMiddle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownActiveRight.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\DropdownArrowDown.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\DropdownArrowUp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuBottom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuBottomLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuBottomRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuSpacer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuTop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuTopLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMenuTopRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownMiddle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\DropdownRight.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Icon.png" />
@@ -159,61 +114,7 @@
     <Resource Include="Resources\ProjectDatabaseBG.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\ProjectDatabaseHeadline1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectDatabaseHeadline2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectDatabaseHeadline3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\ProjectOverviewBG.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectOverviewContainer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectOverviewHeadline.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectOverviewOpenProjectButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectOverviewProject.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectOverviewProjectHovered.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectOverviewStartProjectButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectPverviewDeleteProjectButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectSettingsBG.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectSettingsButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\ProjectSettingsHeadline.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\SplashscreenHeadline.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\TextInputLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\TextInputMiddle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\TextInputRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Validating.gif" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -221,6 +122,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ProjectSettingsBG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
