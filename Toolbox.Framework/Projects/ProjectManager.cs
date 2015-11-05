@@ -52,11 +52,11 @@ namespace Toolbox.Framework.Projects
 
                 foreach (var project in Projects)
                 {
-                    string configPath = ProjectSettingsDirectory + "/" + project.Name + ".json";
+                    var configPath = ProjectSettingsDirectory + "/" + project.Name + ".json";
 
                     using (var fs = new FileStream(configPath, FileMode.Create, FileAccess.Write))
                     {
-                        StreamWriter writer = new StreamWriter(fs);
+                        var writer = new StreamWriter(fs);
                         writer.Write(project.ToJson());
 
                         writer.Close();
