@@ -24,7 +24,6 @@
     <Grid>
         <UserContols:CloseButton x:Name="close" Margin="10" Click="close_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <UserControls:PrimaryButton x:Name="startProject" Click="startProject_Click" HorizontalAlignment="Left" Margin="285,447,0,0" VerticalAlignment="Top" Width="118" Content="+ START PROJECT"/>
-        <UserControls:TextBox HorizontalAlignment="Left" Margin="19,145,0,0" VerticalAlignment="Top" Width="386" Height="285"/>
         <UserControls:PrimaryButton x:Name="deleteProject" Click="deleteProject_Click" HorizontalAlignment="Left" Margin="30,447,0,0" VerticalAlignment="Top" Width="118" Content="- DELETE PROJECT"/>
     </Grid>
 </Window>

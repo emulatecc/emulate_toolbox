@@ -33,7 +33,7 @@ namespace Toolbox.UserContols
         {
             var eventHandler = this.Click;
 
-            eventHandler(this, e);
+            eventHandler?.Invoke(this, e);
         }
     }
 }

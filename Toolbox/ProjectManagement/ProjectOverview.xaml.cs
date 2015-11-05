@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Toolbox.Framework.Projects;
 using Toolbox.General;
 
 namespace Toolbox
@@ -25,6 +25,7 @@ namespace Toolbox
         public ProjectOverview()
         {
             InitializeComponent();
+            ProjectManager.LoadProjects();
         }
 
         private void close_Click(object sender, EventArgs e)

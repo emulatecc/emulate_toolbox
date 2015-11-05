@@ -6,6 +6,9 @@ using Newtonsoft.Json;
 
 namespace Toolbox.Framework.Projects
 {
+    /// <summary>
+    /// Gives functions for interaction with Projects, Projectserialization and deserialization
+    /// </summary>
     public static class ProjectManager
     {
         /// <summary>

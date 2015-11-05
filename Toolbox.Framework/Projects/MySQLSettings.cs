@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Toolbox.Framework.Projects
 {
+    /// <summary>
+    /// Stores MySQLSettings
+    /// </summary>
     public class MySQLSettings
     {
         /// <summary>

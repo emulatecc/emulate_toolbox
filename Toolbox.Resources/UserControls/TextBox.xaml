@@ -55,5 +55,5 @@
             </Style.Triggers>
         </Style>
     </UserControl.Resources>
-    <TextBox Style="{DynamicResource TextBox}" FontFamily="Rob thin" FontSize="14.667"></TextBox>
+    <TextBox x:Name="textBox" Style="{DynamicResource TextBox}" FontFamily="Rob thin" FontSize="14.667"></TextBox>
 </UserControl>

@@ -8,6 +8,9 @@ using Newtonsoft.Json;
 
 namespace Toolbox.Framework.Projects
 {
+    /// <summary>
+    /// Represents a Project
+    /// </summary>
     public class Project
     {
         /// <summary>

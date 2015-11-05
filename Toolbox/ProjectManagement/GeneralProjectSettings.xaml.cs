@@ -28,6 +28,7 @@ namespace Toolbox
         /// </summary>
         public bool EditMode { get; set; }
 
+        public Project project { get; set; }
         /// <summary>
         /// Prepares the GeneralProjectSettings Window
         /// </summary>
@@ -38,7 +39,8 @@ namespace Toolbox
             if (project != null)
             {
                 EditMode = true;
-                assignProjectToMask(project);
+                this.project = project;
+                assignProjectToMask();
                 submit.Content = "Save";
             }
             else
@@ -54,14 +56,30 @@ namespace Toolbox
         }
 
 
-        private void assignProjectToMask(Project project)
+        private void assignProjectToMask()
         {
-
+            projectName.Text = project.Name;
+            projectDirectory.Text = project.Path;
+            logoPath.Text = project.Logo;
         }
 
         private void Submit_OnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (!EditMode)
+                ProjectManager.Projects.Add(new Project
+                {
+                    Name = projectName.Text,
+                    Path = projectDirectory.Text,
+                    Logo = logoPath.Text
+                });
+            else
+            {
+                ProjectManager.Projects.Find(x => x.Name == projectName.Text).Logo = logoPath.Text;
+                ProjectManager.Projects.Find(x => x.Name == projectName.Text).Path = projectDirectory.Text;
+                ProjectManager.Projects.Find(x => x.Name == projectName.Text).Name = projectName.Text;
+            }
+
+            ProjectManager.SaveProjects();
         }
     }
 }

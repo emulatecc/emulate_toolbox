@@ -52,6 +52,9 @@
     <Compile Include="UserControls\PrimaryButton.xaml.cs">
       <DependentUpon>PrimaryButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ProjectStackPanel.xaml.cs">
+      <DependentUpon>ProjectStackPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\TextBox.xaml.cs">
       <DependentUpon>TextBox.xaml</DependentUpon>
     </Compile>
@@ -69,6 +72,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UserControls\PrimaryButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ProjectStackPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

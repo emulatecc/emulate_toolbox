@@ -2,6 +2,9 @@
 
 namespace Toolbox.Framework.Projects
 {
+    /// <summary>
+    /// Represents a Database
+    /// </summary>
     public struct Database
     {
         /// <summary>

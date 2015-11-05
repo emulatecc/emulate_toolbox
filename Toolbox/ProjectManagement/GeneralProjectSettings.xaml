@@ -23,10 +23,10 @@
     </Window.Background>
     <Grid>
         <UserContols:CloseButton x:Name="close" Margin="10" Click="close_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <UserControls:PrimaryButton x:Name="submit" HorizontalAlignment="Left" Margin="415,326,0,0" VerticalAlignment="Top" Width="101"/>
-        <UserControls:TextBox HorizontalAlignment="Left" Margin="176,236,0,0" VerticalAlignment="Top" Width="127"/>
-        <UserControls:TextBox HorizontalAlignment="Left" Margin="175,276,0,0" VerticalAlignment="Top" Width="128"/>
-        <UserControls:TextBox HorizontalAlignment="Left" Margin="176,197,0,0" VerticalAlignment="Top" Width="127"/>
+        <UserControls:PrimaryButton x:Name="submit" Click="Submit_OnClick" HorizontalAlignment="Left" Margin="415,326,0,0" VerticalAlignment="Top" Width="101" TabIndex="4"/>
+        <UserControls:TextBox x:Name="logoPath" HorizontalAlignment="Left" Margin="176,236,0,0" VerticalAlignment="Top" Width="127" TabIndex="2" IsTabStop="True"/>
+        <UserControls:TextBox x:Name="projectDirectory" HorizontalAlignment="Left" Margin="175,276,0,0" VerticalAlignment="Top" Width="128" TabIndex="3" IsTabStop="True"/>
+        <UserControls:TextBox x:Name="projectName" HorizontalAlignment="Left" Margin="176,197,0,0" VerticalAlignment="Top" Width="127" TabIndex="1"/>
         <Label x:Name="label" Content="Name of your project?" HorizontalAlignment="Left" Margin="17,196,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
         <Label x:Name="label_Copy" Content="Already got a logo?" HorizontalAlignment="Left" Margin="17,236,0,0" VerticalAlignment="Top" Height="27" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
         <Label x:Name="label_Copy1" Content="Where to save?" HorizontalAlignment="Left" Margin="17,275,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>

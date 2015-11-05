@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Toolbox.Resources.UserControls
 {
     /// <summary>
-    /// Interaction logic for TextBox.xaml
+    /// Interaktionslogik für ProjectStackPanel.xaml
     /// </summary>
-    public partial class TextBox : UserControl
+    public partial class ProjectStackPanel : UserControl
     {
-        public TextBox()
+        public ProjectStackPanel()
         {
             InitializeComponent();
-            
-        }
-
-        public string Text
-        {
-            get { return textBox.Text; }
-            set { textBox.Text = value; }
         }
     }
 }
