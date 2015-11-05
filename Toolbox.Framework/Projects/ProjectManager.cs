@@ -54,13 +54,14 @@ namespace Toolbox.Framework.Projects
                 {
                     string configPath = ProjectSettingsDirectory + "/" + project.Name + ".json";
 
-                    Stream fs = new FileStream(configPath, FileMode.Create, FileAccess.Write);
+                    using (var fs = new FileStream(configPath, FileMode.Create, FileAccess.Write))
+                    {
+                        StreamWriter writer = new StreamWriter(fs);
+                        writer.Write(project.ToJson());
 
-                    StreamWriter writer = new StreamWriter(fs);
-                    writer.Write(project.ToJson());
-
-                    writer.Close();
-                    fs.Close();
+                        writer.Close();
+                        fs.Close();
+                    }
                 }
 
                 return true;
@@ -91,18 +92,20 @@ namespace Toolbox.Framework.Projects
                 // Getting contents of each file
                 foreach (var file in jsonProjectFilenames)
                 {
-                    var fs = new FileStream(file, FileMode.Open, FileAccess.Read);
-                    if (fs.CanRead)
+                    using (var fs = new FileStream(file, FileMode.Open, FileAccess.Read))
                     {
-                        var reader = new StreamReader(fs);
+                        if (fs.CanRead)
+                        {
+                            var reader = new StreamReader(fs);
 
-                        jsonProjectsRaw.Add(reader.ReadToEnd());
+                            jsonProjectsRaw.Add(reader.ReadToEnd());
 
-                        reader.Close();
-                        fs.Close();
+                            reader.Close();
+                            fs.Close();
+                        }
+                        else
+                            throw new FileLoadException("Cannot read file: " + file);
                     }
-                    else
-                        throw new FileLoadException("Cannot read file: " + file);
                 }
 
                 // Serializing ProjectSettings into Projects-List

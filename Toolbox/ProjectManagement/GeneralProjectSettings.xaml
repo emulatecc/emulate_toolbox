@@ -27,11 +27,11 @@
         <UserControls:TextBox x:Name="logoPath" HorizontalAlignment="Left" Margin="176,236,0,0" VerticalAlignment="Top" Width="127" TabIndex="2" IsTabStop="True"/>
         <UserControls:TextBox x:Name="projectDirectory" HorizontalAlignment="Left" Margin="175,276,0,0" VerticalAlignment="Top" Width="128" TabIndex="3" IsTabStop="True"/>
         <UserControls:TextBox x:Name="projectName" HorizontalAlignment="Left" Margin="176,197,0,0" VerticalAlignment="Top" Width="127" TabIndex="1"/>
-        <Label x:Name="label" Content="Name of your project?" HorizontalAlignment="Left" Margin="17,196,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
-        <Label x:Name="label_Copy" Content="Already got a logo?" HorizontalAlignment="Left" Margin="17,236,0,0" VerticalAlignment="Top" Height="27" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
-        <Label x:Name="label_Copy1" Content="Where to save?" HorizontalAlignment="Left" Margin="17,275,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
-        <Label x:Name="label1" Content="Set a name" HorizontalAlignment="Left" Margin="455,197,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
-        <Label x:Name="label1_Copy" Content="If you got a logo give it a shot!" HorizontalAlignment="Left" Margin="363,237,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
-        <Label x:Name="label1_Copy1" Content="The directory of the project" HorizontalAlignment="Left" Margin="375,277,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
+        <Label Content="Name of your project?" HorizontalAlignment="Left" Margin="17,196,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
+        <Label Content="Already got a logo?" HorizontalAlignment="Left" Margin="17,236,0,0" VerticalAlignment="Top" Height="27" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
+        <Label Content="Where to save?" HorizontalAlignment="Left" Margin="17,275,0,0" VerticalAlignment="Top" Height="25" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333"/>
+        <Label Content="Set a name" HorizontalAlignment="Left" Margin="455,197,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
+        <Label Content="If you got a logo give it a shot!" HorizontalAlignment="Left" Margin="363,237,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
+        <Label Content="The directory of the project" HorizontalAlignment="Left" Margin="375,277,0,0" VerticalAlignment="Top" FontFamily="Roboto Thin" Foreground="#FF676467"/>
     </Grid>
 </Window>
