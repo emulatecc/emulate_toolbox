@@ -16,7 +16,7 @@
             <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
         </Style>
     </UserControl.Resources>
-    <Border BorderBrush="Red" CornerRadius="2" BorderThickness="1">
-        <DockPanel Style="{DynamicResource DockPanel}" VerticalAlignment="Top" />
-    </Border>
+    <Border Background="#212121" BorderBrush="#424042" CornerRadius="2" BorderThickness="1">
+            <Grid></Grid>
+        </Border>
 </UserControl>
