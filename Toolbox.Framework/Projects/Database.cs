@@ -15,6 +15,6 @@ namespace Toolbox.Framework.Projects
         /// <summary>
         /// What type is the database of
         /// </summary>
-        public DBType DatabaseType { get; set; } 
+        public DbType DatabaseType { get; set; } 
     }
 }

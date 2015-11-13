@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace Toolbox.Framework.Projects
 {
@@ -31,7 +25,7 @@ namespace Toolbox.Framework.Projects
         /// <summary>
         /// MySQL Informations of the project
         /// </summary>
-        public MySQLSettings MySQLInfo { get; set; } = new MySQLSettings();
+        public MySqlSettings MySqlInfo { get; set; } = new MySqlSettings();
 
         /// <summary>
         /// Serializes Object into a JSON String

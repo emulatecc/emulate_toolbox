@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Toolbox.Framework.Projects
 {
     /// <summary>
     /// Stores MySQLSettings
     /// </summary>
-    public class MySQLSettings
+    public class MySqlSettings
     {
         /// <summary>
         /// IP of the MySQL Server

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Toolbox.Framework.Enumerations
+﻿namespace Toolbox.Framework.Enumerations
 {
     /// <summary>
     /// Enumeration of Database Types e.g.
@@ -12,7 +6,7 @@ namespace Toolbox.Framework.Enumerations
     /// World = World Database
     /// Auth = Auth Database
     /// </summary>
-    public enum DBType
+    public enum DbType
     {
         Character,
         World,
