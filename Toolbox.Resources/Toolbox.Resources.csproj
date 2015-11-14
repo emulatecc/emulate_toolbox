@@ -52,6 +52,9 @@
     <Compile Include="UserControls\PrimaryButton.xaml.cs">
       <DependentUpon>PrimaryButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ProjectTab.xaml.cs">
+      <DependentUpon>ProjectTab.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProjectStackPanel.xaml.cs">
       <DependentUpon>ProjectStackPanel.xaml</DependentUpon>
     </Compile>
@@ -74,6 +77,10 @@
     <Page Include="UserControls\PrimaryButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ProjectTab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\ProjectStackPanel.xaml">
       <SubType>Designer</SubType>
@@ -132,6 +139,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ProjectSettingsBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ProjectContainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toolbox.Framework\Toolbox.Framework.csproj">
+      <Project>{424aae01-72a1-4a6b-82fd-0ef1cfe05f7b}</Project>
+      <Name>Toolbox.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

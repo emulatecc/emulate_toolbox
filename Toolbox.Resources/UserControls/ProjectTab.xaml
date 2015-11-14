@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Toolbox.Resources.UserControls.ProjectTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Toolbox.Resources.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="55" d:DesignWidth="377">
+    <Grid>
+        <Image x:Name="Background" Source="/Toolbox.Resources;component/Resources/ProjectContainer.png" />
+        <Label x:Name="ProjectName" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333" Content="DemoProjectName" HorizontalAlignment="Left" Margin="85,1,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ProjectDir" Content="C:/Demo/Project/Path" HorizontalAlignment="Left" FontFamily="Roboto Thin" Foreground="#FF676467" Margin="85,17,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="37" Margin="6,8,0,0" VerticalAlignment="Top" Width="72"/>
+    </Grid>
+</UserControl>

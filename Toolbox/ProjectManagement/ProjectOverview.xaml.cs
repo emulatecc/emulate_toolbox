@@ -41,7 +41,11 @@ namespace Toolbox
 
         private void deleteProject_Click(object sender, EventArgs e)
         {
+            var project = new Project();
 
+            project.Name = "TestName";
+            project.Path = "TestPath";
+            ProjectPanel.AddProject(project);
         }
     }
 }

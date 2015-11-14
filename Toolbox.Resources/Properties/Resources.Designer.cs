@@ -93,6 +93,16 @@ namespace Toolbox.Resources.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ProjectContainer {
+            get {
+                object obj = ResourceManager.GetObject("ProjectContainer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ProjectOverviewBG {
             get {
                 object obj = ResourceManager.GetObject("ProjectOverviewBG", resourceCulture);

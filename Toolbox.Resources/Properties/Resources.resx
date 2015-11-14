@@ -386,6 +386,10 @@
         PdQa/ebn5PlX+5S/lyH/XbT6/wBZOMGos3VPEAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ProjectContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProjectContainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ProjectOverviewBG" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAasAAAIKCAYAAACduWC7AAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -716,7 +720,6 @@
         Kh7kfnjGpr6u1j+eIlyq6AODoAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ProjectSettingsBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\projectsettingsbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
