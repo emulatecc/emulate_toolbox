@@ -8,7 +8,7 @@
              d:DesignHeight="31" d:DesignWidth="307">
     <UserControl.Resources>
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#424042"/>
-        <SolidColorBrush x:Key="TextBox.Active.Border" Color="#5d5d5d"/>
+        <SolidColorBrush x:Key="TextBox.Active.Border" Color="#ff0054"/>
         <SolidColorBrush x:Key="TextBox.Active.ForeGround" Color="#5d5d5d" />
         <SolidColorBrush x:Key="TextBox.Static.ForeGround" Color="#424042" />
         <Style x:Key="TextBox" x:Name="textbox" TargetType="{x:Type TextBox}">
