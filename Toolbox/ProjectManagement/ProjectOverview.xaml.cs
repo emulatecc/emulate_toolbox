@@ -1,21 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Toolbox.Framework.Projects;
-using Toolbox.General;
 
-namespace Toolbox
+namespace Toolbox.ProjectManagement
 {
     /// <summary>
     /// Interaktionslogik für ProjectOverview.xaml
@@ -26,6 +13,16 @@ namespace Toolbox
         {
             InitializeComponent();
             ProjectManager.LoadProjects();
+
+            AddProjects();
+        }
+
+        private void AddProjects()
+        {
+            foreach (var project in ProjectManager.Projects)
+            {
+                ProjectPanel.AddProject(project);
+            }
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -43,6 +40,7 @@ namespace Toolbox
         {
             var project = new Project();
 
+            project.Logo = "C:/Users/Mathias/Desktop/ron.png";
             project.Name = "TestName";
             project.Path = "TestPath";
             ProjectPanel.AddProject(project);

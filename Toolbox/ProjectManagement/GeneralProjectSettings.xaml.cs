@@ -1,22 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-using Toolbox.General;
 using Toolbox.Framework.Projects;
 
-namespace Toolbox
+namespace Toolbox.ProjectManagement
 {
     /// <summary>
     /// Interaction logic for GeneralProjectSettings.xaml
@@ -40,7 +26,7 @@ namespace Toolbox
             {
                 EditMode = true;
                 this.project = project;
-                assignProjectToMask();
+                AssignProjectToMask();
                 submit.Content = "Save";
             }
             else
@@ -56,7 +42,7 @@ namespace Toolbox
         }
 
 
-        private void assignProjectToMask()
+        private void AssignProjectToMask()
         {
             projectName.Text = project.Name;
             projectDirectory.Text = project.Path;

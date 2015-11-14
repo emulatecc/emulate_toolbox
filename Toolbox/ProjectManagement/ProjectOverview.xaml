@@ -4,20 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toolbox"
-        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" xmlns:UserControls="clr-namespace:Toolbox.Resources.UserControls;assembly=Toolbox.Resources" x:Name="Project_Overview" x:Class="Toolbox.ProjectOverview"
+        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" xmlns:UserControls="clr-namespace:Toolbox.Resources.UserControls;assembly=Toolbox.Resources" x:Name="Project_Overview" x:Class="Toolbox.ProjectManagement.ProjectOverview"
         mc:Ignorable="d"
         Title="Project Overview" Height="522" Width="427" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStyle="None" Icon="/Toolbox.Resources;component/Resources/Icon.png">
-    <Window.Resources>
-        <Style x:Key="FocusVisual">
-            <Setter Property="Control.Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
     <Window.Background>
         <ImageBrush ImageSource="/Toolbox.Resources;component/Resources/ProjectOverviewBG.png"/>
     </Window.Background>

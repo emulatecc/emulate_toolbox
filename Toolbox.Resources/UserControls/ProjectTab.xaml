@@ -5,11 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Toolbox.Resources.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="55" d:DesignWidth="377">
+             d:DesignHeight="55" d:DesignWidth="377" Focusable="True">
     <Grid>
-        <Image x:Name="Background" Source="/Toolbox.Resources;component/Resources/ProjectContainer.png" />
+        <Image x:Name="Background" Source="/Toolbox.Resources;component/Resources/ProjectContainer.png" Focusable="True" />
         <Label x:Name="ProjectName" Foreground="#EBEBEB" FontFamily="Roboto Regular" FontSize="13.333" Content="DemoProjectName" HorizontalAlignment="Left" Margin="85,1,0,0" VerticalAlignment="Top"/>
         <Label x:Name="ProjectDir" Content="C:/Demo/Project/Path" HorizontalAlignment="Left" FontFamily="Roboto Thin" Foreground="#FF676467" Margin="85,17,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="37" Margin="6,8,0,0" VerticalAlignment="Top" Width="72"/>
+        <Border x:Name="ActiveBorder" Visibility="Hidden"  CornerRadius="2" Background="#ff0054" Panel.ZIndex="-50" IsVisibleChanged="ActiveBorder_IsVisibleChanged">
+            <Image x:Name="ProjectImage" HorizontalAlignment="Left" Height="40" Width="40" Margin="6,8,0,0" VerticalAlignment="Top" StretchDirection="UpOnly" RenderTransformOrigin="0.5,0.5" />
+        </Border>
+        <local:PrimaryButton Visibility="Hidden" x:Name="Open" Content="OPEN" HorizontalAlignment="Left" Margin="295,10,0,0" VerticalAlignment="Top" Width="48"/>
     </Grid>
 </UserControl>

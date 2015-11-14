@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Toolbox"
-        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" xmlns:UserControls="clr-namespace:Toolbox.Resources.UserControls;assembly=Toolbox.Resources" x:Name="ProjectOverview" x:Class="Toolbox.GeneralProjectSettings"
+        xmlns:UserContols="clr-namespace:Toolbox.UserContols;assembly=Toolbox.Resources" xmlns:UserControls="clr-namespace:Toolbox.Resources.UserControls;assembly=Toolbox.Resources" x:Name="ProjectOverview" x:Class="Toolbox.ProjectManagement.GeneralProjectSettings"
         mc:Ignorable="d"
         Title="General Project Settings" Height="398" Width="535" WindowStartupLocation="CenterScreen" ScrollViewer.VerticalScrollBarVisibility="Disabled" ResizeMode="NoResize" WindowStyle="None" Icon="/Toolbox.Resources;component/Resources/Icon.png">
     <Window.Resources>

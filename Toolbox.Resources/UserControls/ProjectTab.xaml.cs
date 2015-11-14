@@ -14,5 +14,9 @@ namespace Toolbox.Resources.UserControls
             InitializeComponent();
         }
 
+        private void ActiveBorder_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            Open.Visibility = ActiveBorder.Visibility;
+        }
     }
 }
