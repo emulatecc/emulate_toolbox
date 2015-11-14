@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using Toolbox.Framework.Misc;
 
 namespace Toolbox.Framework.Projects
 {
@@ -48,6 +49,8 @@ namespace Toolbox.Framework.Projects
         {
             try
             {
+                Logger.Write("Saving Projects..", LogLevel.Error);
+
                 if (!SettingsDirectoryExists())
                     CreateSettingsDirectory();
 
@@ -70,6 +73,7 @@ namespace Toolbox.Framework.Projects
             catch(Exception ex)
             {
                 MessageBox.Show("There has been an Error while saving the projects: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 return false;
             }
         }
@@ -82,6 +86,8 @@ namespace Toolbox.Framework.Projects
         {
             try
             {
+                Logger.Write("Loading Projects..");
+
                 if (!SettingsDirectoryExists())
                     return true;
 
@@ -119,8 +125,7 @@ namespace Toolbox.Framework.Projects
             catch(Exception ex)
             {
                 MessageBox.Show("There has been an Error while loading the projects: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                // TODO: Call error window
+                Logger.Write(ex.Message, LogLevel.Error);
                 return false;
             }
         }

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using System.Net;
 
 namespace Toolbox.Framework.Misc
 {
@@ -34,9 +29,25 @@ namespace Toolbox.Framework.Misc
     /// </summary>
     public static class Logger
     {
-        private readonly static FileStream LogStream = new FileStream("error.log", FileMode.CreateNew, FileAccess.Write);
-        private static StreamWriter _logWriter = new StreamWriter(LogStream);
+        private readonly static FileStream LogStream = new FileStream("error.log", FileMode.Create, FileAccess.Write);
+        private readonly static StreamWriter LogWriter = new StreamWriter(LogStream);
 
-        
+        /// <summary>
+        /// Writes a message to the logfile
+        /// </summary>
+        /// <param name="logMessage">Message that should be written to the file.</param>
+        /// <param name="logLevel">Which type of message is it?</param>
+        public static void Write(string logMessage, LogLevel logLevel = LogLevel.Normal)
+        {
+            try
+            {
+                LogWriter.WriteLine($"{DateTime.Now.ToLongTimeString()} - {logLevel}: {logMessage}");
+                LogWriter.Flush();
+            }
+            catch (Exception)
+            {
+                throw new ApplicationException();
+            }
+        }
     }
 }
