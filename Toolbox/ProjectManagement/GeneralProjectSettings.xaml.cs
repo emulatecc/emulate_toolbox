@@ -14,7 +14,11 @@ namespace Toolbox.ProjectManagement
         /// </summary>
         public bool EditMode { get; set; }
 
+        /// <summary>
+        /// Project which represents the DataContext.
+        /// </summary>
         public Project project { get; set; }
+
         /// <summary>
         /// Prepares the GeneralProjectSettings Window
         /// </summary>

@@ -19,6 +19,9 @@ namespace Toolbox.General
     /// </summary>
     public partial class NotificationBox : Window
     {
+        /// <summary>
+        /// Cunstructor of the NotificationBox
+        /// </summary>
         public NotificationBox()
         {
             InitializeComponent();

@@ -9,6 +9,9 @@ namespace Toolbox.Resources.UserControls
     /// </summary>
     public partial class ProjectTab : UserControl
     {
+        /// <summary>
+        /// Constructor of the ProjectTab
+        /// </summary>
         public ProjectTab()
         {
             InitializeComponent();

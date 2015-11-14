@@ -9,6 +9,9 @@ namespace Toolbox.ProjectManagement
     /// </summary>
     public partial class ProjectOverview : Window
     {
+        /// <summary>
+        /// Constructor of ProjectOverview
+        /// </summary>
         public ProjectOverview()
         {
             InitializeComponent();

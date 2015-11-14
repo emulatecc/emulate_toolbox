@@ -8,8 +8,19 @@
     /// </summary>
     public enum DbType
     {
+        /// <summary>
+        /// Enumeration type for Character Database
+        /// </summary>
         Character,
+
+        /// <summary>
+        /// Enumeration type for World Database
+        /// </summary>
         World,
+
+        /// <summary>
+        /// Enumeration type for Authentication Database
+        /// </summary>
         Auth
     }
 }

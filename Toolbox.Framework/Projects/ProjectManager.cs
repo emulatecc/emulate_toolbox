@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace Toolbox.Framework.Projects
@@ -68,13 +69,13 @@ namespace Toolbox.Framework.Projects
             }
             catch(Exception ex)
             {
-                //TODO: Call custom Error Window
+                MessageBox.Show("There has been an Error while saving the projects: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
 
         /// <summary>
-        /// Loads all Projects from the "Projects"-Directory and Serializes them to the List<Projects>
+        /// Loads all Projects from the "Projects"-Directory and Serializes them to the List
         /// </summary>
         /// <returns>True if successfull</returns>
         public static bool LoadProjects()
@@ -117,6 +118,8 @@ namespace Toolbox.Framework.Projects
             }
             catch(Exception ex)
             {
+                MessageBox.Show("There has been an Error while loading the projects: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 // TODO: Call error window
                 return false;
             }

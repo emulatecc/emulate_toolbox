@@ -20,9 +20,19 @@ namespace Toolbox.Resources.UserControls
     /// </summary>
     public partial class PrimaryButton : UserControl
     {
+        /// <summary>
+        /// DependencyProperty to expose the Content-Property of the Primary Button
+        /// </summary>
         public new static DependencyProperty ContentProperty = DependencyProperty.Register("Content", typeof(object), typeof(PrimaryButton));
+
+        /// <summary>
+        /// Exposing a click event handler from the button.
+        /// </summary>
         public event EventHandler Click;
 
+        /// <summary>
+        /// Constructor of the PrimaryButton
+        /// </summary>
         public PrimaryButton()
         {
             InitializeComponent();
@@ -38,6 +48,9 @@ namespace Toolbox.Resources.UserControls
             eventHandler?.Invoke(this, e);
         }
 
+        /// <summary>
+        /// Property for the exposed button content
+        /// </summary>
         public new object Content
         {
             get { return GetValue(ContentProperty); }

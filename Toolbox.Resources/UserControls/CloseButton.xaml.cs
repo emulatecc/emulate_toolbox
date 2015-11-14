@@ -20,8 +20,14 @@ namespace Toolbox.UserContols
     /// </summary>
     public partial class CloseButton : UserControl
     {
+        /// <summary>
+        /// Eventhandler for the Button Click event of the close button.
+        /// </summary>
         public event EventHandler Click;
 
+        /// <summary>
+        /// Constructor of the close button.
+        /// </summary>
         public CloseButton()
         {
             InitializeComponent();

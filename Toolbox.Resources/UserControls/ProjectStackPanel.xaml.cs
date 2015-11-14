@@ -11,16 +11,22 @@ using System.Windows.Input;
 namespace Toolbox.Resources.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für ProjectStackPanel.xaml
+    /// InteractionLogic für ProjectStackPanel.xaml
     /// </summary>
     public partial class ProjectStackPanel : UserControl
     {
-
+        /// <summary>
+        /// Constructor of the ProjectStackpanel
+        /// </summary>
         public ProjectStackPanel()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Adds a Project to the ProjectStackPanel
+        /// </summary>
+        /// <param name="project">Project that should be added to the ProjectStackPanel</param>
         public void AddProject(Project project)
         {
             try

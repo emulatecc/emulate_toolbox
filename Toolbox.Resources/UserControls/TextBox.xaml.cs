@@ -20,12 +20,18 @@ namespace Toolbox.Resources.UserControls
     /// </summary>
     public partial class TextBox : UserControl
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public TextBox()
         {
             InitializeComponent();
             
         }
 
+        /// <summary>
+        /// Exposing the Text-Property of the Textbox.
+        /// </summary>
         public string Text
         {
             get { return textBox.Text; }
